@@ -1,0 +1,107 @@
+.select-dragging-widgets {
+    border-bottom: 1px solid black;
+    padding: 15px;
+    position: relative;
+    display: flex;
+}
+
+.widget {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.moving-div {
+    position: absolute;
+}
+
+.moving-div .moving-div-line {
+    position: absolute;
+}
+
+.moving-div .moving-div-line:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+.moving-div .moving-div-top-line {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-top: 1px solid black;
+    cursor: n-resize;
+}
+
+.moving-div .moving-div-bottom-line {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-bottom: 1px solid black;
+    cursor: s-resize;
+}
+
+.moving-div .moving-div-left-line {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-left: 1px solid black;
+    cursor: w-resize;
+}
+
+.moving-div .moving-div-right-line {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-right: 1px solid black;
+    cursor: e-resize;
+}
+
+.moving-div .moving-div-corner {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    border: 1px solid #808080;
+    background: #FFF;
+    opacity: 0;
+    transition: all 0.25s;
+}
+
+.moving-div .moving-div-top-left-corner {
+    top: -3px;
+    left: -3px;
+    cursor: nw-resize;
+}
+
+.moving-div .moving-div-top-right-corner {
+    top: -3px;
+    right: -3px;
+    cursor: ne-resize;
+}
+
+.moving-div .moving-div-bottom-right-corner {
+    bottom: -3px;
+    right: -3px;
+    cursor: se-resize;
+}
+
+.moving-div .moving-div-bottom-left-corner {
+    bottom: -3px;
+    left: -3px;
+    cursor: sw-resize;
+}
+
+.moving-div .moving-div-corner:hover {
+    opacity: 1;
+}
+
+.moving-div-header {
+    padding: 5px;
+    cursor: move;
+    transition: all 0.25s;
+    background-color: #797b82;
+    color: #fff;
+}
+
