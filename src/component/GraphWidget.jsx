@@ -165,7 +165,7 @@ const GraphWidget = ({datum, options}) => {
     return (
         <svg
             style={{
-                width: '100%',
+                width: !!options.width ? options.width || '100%' : '100%',
                 height: !!options.height ? options.height || '100%' : '100%'
             }}
             xmlns="http://www.w3.org/2000/svg" ref={svgRef}
