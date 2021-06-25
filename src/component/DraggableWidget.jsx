@@ -11,7 +11,7 @@ const DraggableWidget = ({ widgets, draggedData, setDragData, setIsExit }) => {
 
     const onDragEnd = (e) => {
         setIsExit(true)
-        setDragData(Object.assign({}, draggedData, {x: e.nativeEvent.clientX-150, y: e.nativeEvent.clientY}))
+        setDragData(Object.assign({}, draggedData, {x: e.nativeEvent.clientX-50, y: e.nativeEvent.clientY}))
     }
 
     return (

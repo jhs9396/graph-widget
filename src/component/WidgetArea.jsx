@@ -46,7 +46,7 @@ const WidgetArea = ({isExit, dragData}) => {
         const newStyle = {}
         newStyle[index] = {
             ...style[index],
-            widthX: e.nativeEvent.clientX -150 - style[index].left
+            widthX: e.nativeEvent.clientX -50 - style[index].left
         }
 
         setStyle(Object.assign({}, style, newStyle))
